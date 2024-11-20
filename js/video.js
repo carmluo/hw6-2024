@@ -61,16 +61,16 @@ document.querySelector("#mute").addEventListener("click", function() {
 		// change button text
 		mute.innerHTML = "Unmute";
 		// mute audio
-		video.volume = 0;
-		slider.value = 0;
-		volume.innerHTML = "0%";
+		video.muted = true;
+		// slider.value = 0;
+		// volume.innerHTML = "0%";
 	} else {
 		// change button text
 		mute.innerHTML = "Mute";
 		// unmute audio
-		video.volume = 1;
-		slider.value = 100;
-		volume.innerHTML = "100%";
+		video.muted = false;
+		// slider.value = 100;
+		// volume.innerHTML = "100%";
 	}
 })
 
